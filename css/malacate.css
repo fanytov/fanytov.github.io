@@ -419,6 +419,22 @@ footer{
 
 @media(max-width:768px){
 
+.header-container{
+    flex-direction:column;
+}
+
+.description-container{
+    flex-direction:column;
+}
+
+.footer-container{
+    flex-direction:column;
+}
+
+.footer-columns{
+    flex-direction:column;
+}
+
 .description-container{
     flex-direction:column;
     text-align:center;
