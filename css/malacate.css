@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #243d2c;
+    --secondary-color: #495929;
+    --tertiary-color: #7a9544;
+    --quaternary-color: #476180;
+    --quinary-color: #5979a0;
+    --sixth-color:#7a94b3;
+    --seventh-color:#9bafc6;
+    --eighth-color: #7c8a80;
+    --color-black: #1a1a1a;
+    --color-white: #f2f2f2;
+    --background-color: #f9f4ed;
+    --background-color-two: #e9e2d8;
+    --primary-color-var: #7c8a80;
+    --secondary-color-var: #9bafc6;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;    
+}
+
+h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: 6rem;
+    line-height: 1.1;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 20px 0px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+    margin: 20px 0px;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--color-black);
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+/* HEADER + HERO */
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    padding:20px 30px;
+}
+
+.logo{
+    width:180px;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:100%;
+    display:block;
+}
+
+.menu-list{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px 35px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.menu-list a{
+    transition:.3s;
+}
+
+.footer-list{
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px 35px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color-var);
+}
+
+.menu {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.hero {
+    align-content: center;
+    height: calc(100vh - 200px);
+    width: 100%;
+    background-image: url('../img/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* DESCRIPTION */
+
+.description-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.description-section{
+    padding:60px 40px;
+}
+
+.description-malacate {
+    background-color: var(--primary-color);
+}
+
+.description-malacate h2,
+.description-malacate h3,
+.description-malacate p {
+    color: var(--background-color-two);
+}
+
+.description-colectivo {
+    background-color: var(--secondary-color);
+}
+
+.description-colectivo h2,
+.description-colectivo h3,
+.description-colectivo p {
+    color:var(--background-color-two);
+}
+
+.description-territorio {
+    background-color: var(--tertiary-color);
+}
+
+.image-box{
+    flex:1;
+    min-width:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-box img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    display:block;
+    border-radius:70px 15px 70px 15px;
+}
+
+.text-box{
+    flex:1;
+    min-width:0;
+}
+
+.naturaleza {
+    background-image: url(../img/paisaje-image.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:60px 40px;
+    color: var(--background-color);
+}
+
+.naturaleza .image-box img{
+    max-width:600px;
+}
+
+.naturaleza h2,
+.naturaleza h3,
+.naturaleza p {
+    color:var(--background-color);
+}
+
+
+/* CARDS */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cards-section {
+    padding: 20px 40px;
+}
+
+.container {
+    flex-wrap: wrap;
+}
+
+.card-height {
+    min-height: fit-content;
+    flex: 1 1 200px;
+}
+
+.comunidad-card,
+.infraestructura-card,
+.megafauna-card {
+    background-color: var(--seventh-color);
+}
+
+.microcuenca-card,
+.arroyo-card,
+.conservacion-card {
+    background-color: var(--eighth-color);
+}
+
+.territorio-text h3 {
+    color: var(--primary-color  );
+}
+
+.contaminacion-card,
+.incendios-card,
+.abandono-card {
+    background-color: var(--primary-color-var);
+}
+
+.agua-card,
+.urbanismo-card {
+    background-color: var(--secondary-color-var);
+}
+
+.contaminacion-card h3,
+.incendios-card h3,
+.abandono-card h3 {
+    color: var(--primary-color);
+}
+
+.agua-card h3,
+.urbanismo-card h3 {
+    color: var(--quaternary-color);
+}
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.contaminacion-card img,
+.agua-card img,
+.incendios-card img,
+.urbanismo-card img,
+.abandono-card img{
+    max-width:80px;
+    max-height:80px;
+    object-fit:contain;
+    margin: 10px 10px 10px 0px;
+    padding:15px;
+    background:rgba(255,255,255,.18);
+    border-radius:50%;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background:var(--sixth-color);
+    padding-top:60px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:80px;
+}
+
+.footer-brand{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:350px;
+}
+
+.footer-brand h4{
+    color:var(--background-color);
+    margin:0;
+}
+
+.footer-brand img{
+    width:180px;
+}
+
+.footer-description{
+    color:var(--background-color);
+    line-height:1.7;
+    font-size:.95rem;
+    margin:0;
+}
+
+.footer-right{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:35px;
+}
+
+.footer-columns{
+    display:flex;
+    gap:70px;
+}
+
+.footer-column h4{
+    color:var(--background-color);
+    margin-bottom:18px;
+}
+
+.footer-column ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-column li{
+    margin-bottom:12px;
+}
+
+.footer-column a{
+    color:var(--background-color);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:var(--primary-color);
+}
+
+.footer-bottom{
+    margin-top:60px;
+    padding:25px 40px;
+    border-top:1px solid rgba(255,255,255,.25);
+    text-align:center;
+}
+
+.footer-quote{
+    margin-bottom:18px;
+    font-family:"Noto Serif Display", serif;
+    font-style:italic;
+    font-size:1rem;
+    color:rgba(255,255,255,.85);
+}
+
+.footer-bottom p{
+    color:var(--background-color);
+    margin:0;
+    line-height:1.7;
+}
+
+/* VISTAS */
+
+.visit-counter{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    background:rgba(255,255,255,.2);
+    border-radius:999px;
+    backdrop-filter:blur(10px);
+}
+
+.label{
+    color:var(--background-color);
+    font-size:.9rem;
+}
+
+.count{
+    color:white;
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+@media(max-width:768px){
+
+.description-container{
+    flex-direction:column;
+    text-align:center;
+    gap:30px;
+}
+
+.image-box{
+    width:100%;
+    max-width:350px;
+    margin:auto;
+}
+
+.image-box img{
+    width:100%;
+    height:auto;
+}
+
+.footer-container{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.footer-right{
+    align-items:center;
+}
+
+.footer-columns{
+    flex-direction:column;
+    gap:30px;
+}
+
+
+}
