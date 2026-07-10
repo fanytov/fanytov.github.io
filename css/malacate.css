@@ -232,7 +232,7 @@ nav ul li a:hover {
 }
 
 .card-height{
-    height:1 1 280px;
+    flex:1 1 280px;
 }
 
 .comunidad-card,
@@ -293,7 +293,36 @@ nav ul li a:hover {
     padding:15px;
     background:rgba(255,255,255,.18);
     border-radius:50%;
+}
 
+.territorio-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.territorio-grid .card-height{
+    flex:1 1 280px;
+}
+
+.legado-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.legado-grid .card-height{
+    flex:1 1 280px;
+}
+
+.problematica-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.problematica-grid .card-height{
+    flex:1 1 280px;
 }
 
 
