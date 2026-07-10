@@ -194,7 +194,7 @@ nav ul li a:hover {
 }
 
 .naturaleza {
-    background-image: url(../img/paisaje-image.jpg);
+    background-image: url(../img/paisaje.jpg);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -219,7 +219,6 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: auto;
     margin: 0;
     overflow: hidden;
 }
@@ -232,9 +231,8 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.card-height {
-    min-height: fit-content;
-    flex: 1 1 200px;
+.card-height{
+    flex:1 1 280px;
 }
 
 .comunidad-card,
@@ -290,11 +288,12 @@ nav ul li a:hover {
 .abandono-card img{
     width:80px;
     height:80px;
+    display:block;
     object-fit:contain;
     padding:15px;
     background:rgba(255,255,255,.18);
     border-radius:50%;
-    display:block;
+
 }
 
 
@@ -423,16 +422,12 @@ footer{
     flex-direction:column;
 }
 
-.description-container{
-    flex-direction:column;
+.flex-container{
+    flex-wrap:wrap;
 }
 
-.footer-container{
-    flex-direction:column;
-}
-
-.footer-columns{
-    flex-direction:column;
+.cards-section .flex-container{
+    justify-content:center;
 }
 
 .description-container{
