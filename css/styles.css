@@ -162,7 +162,5 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-    .flex-container {
-        flex-direction: column;
-    }
+
 }
