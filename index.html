@@ -4,6 +4,12 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>El Malacate</title>
+    <meta name="description"
+          content="Conoce El Malacate, un espacio de gran valor ambiental, histórico y cultural en Aguascalientes. Descubre su biodiversidad, patrimonio y las acciones para su conservación.">
+
+    <meta name="author" content="Fanny Tovar">
+
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel='stylesheet' href='css/malacate.css'>
     <link rel='stylesheet' href='css/styles.css'>
 </head>
@@ -60,21 +66,21 @@
             </h2>
             <div class="flex-container">
                 <div class="card card-height comunidad-card">
-                    <img src="img/legado-comunidad.jpg" alt="Comunidad de El Malacate">
+                    <img src="img/legado_comunidad.jpg" alt="Comunidad de El Malacate">
                     <div class="px-2 py-2">
                         <h3>Comunidad</h3>
                         <p>El Malacate surgió gracias a la herencia, compra y donación de distintos predios, dando origen al poblamiento de la comunidad. A lo largo de su historia ha desarrollado una identidad propia, marcada por la organización comunitaria, sus tradiciones y un fuerte sentido de pertenencia. Actualmente, sus habitantes trabajan por rescatar y preservar su memoria histórica.</p>
                     </div>
                 </div>
                 <div class="card card-height infraestructura-card">
-                    <img src="img/legado-infraestructura.jpg" alt="Capilla de eL mALACATE">
+                    <img src="img/legado_infraestructura.jpg" alt="Capilla de eL mALACATE">
                     <div class="px-2 py-2">
                         <h3>Infraestructura</h3>
                         <p>El nombre de El Malacate proviene de su antigua noria, infraestructura alrededor de la cual se fundó la comunidad y se desarrolló gran parte de su vida social. Otro espacio emblemático es la capilla, considerada el centro espiritual y religioso de la comunidad, donde se fortalecen los lazos entre sus habitantes.</p>
                     </div>
                 </div>
                 <div class="card card-height megafauna-card">
-                    <img src="img/legado-megafauna.jpg" alt="Huellas de animales">
+                    <img src="img/legado_megafauna.jpg" alt="Huellas de animales">
                     <div class="px-2 py-2">
                         <h3>Megafauna</h3>
                         <p>El territorio de El Malacate conserva un importante legado paleontológico con hallazgos de megafauna perteneciente a la Era del Hielo. Estos descubrimientos convierten a la zona en un sitio de gran relevancia para comprender la historia natural de la región.</p>
@@ -117,21 +123,21 @@
         </div>
         <div class="content-wrapper flex-container cards-section px-4">
                 <div class="card card-height microcuenca-card">
-                    <img src="img/territorio-microcuenca.jpg" alt="Microcuenca">
+                    <img src="img/territorio_microcuenca.jpg" alt="Microcuenca">
                     <div class="px-2 py-2 territorio-text">
                         <h3>Microcuenca hidrográfica</h3>
                         <p>El Malacate contribuye a la captación e infiltración de agua hacia el subsuelo, favoreciendo el funcionamiento del sistema hídrico de la región.</p>
                     </div>
                 </div>
                 <div class="card card-height arroyo-card">
-                    <img src="img/territorio-arroyo.jpg" alt="Arroyo">
+                    <img src="img/territorio_arroyo.jpg" alt="Arroyo">
                     <div class="px-2 py-2 territorio-text">
                         <h3>Arroyo de El Malacate</h3>
                         <p>Considerado uno de los principales símbolos naturales de la comunidad, el arroyo forma parte de la historia y del equilibrio ecológico del territorio.</p>
                     </div>
                 </div>
                 <div class="card card-height conservacion-card">
-                    <img src="img/territorio-importancia.jpg" alt="El Malacate">
+                    <img src="img/territorio_importancia.jpg" alt="El Malacate">
                     <div class="px-2 py-2 territorio-text">
                         <h3>¿Por qué lo debemos conservar?</h3>
                         <p>Su bosque de mezquites, nopales, huizaches y plantas medicinales representa un patrimonio natural cuya conservación beneficia tanto a la comunidad como a la ciudad de Aguascalientes.</p>
@@ -168,7 +174,7 @@
             </h2>
             <div class="flex-container flex-wrap">
                 <div class="card card-height px-2 py-2 contaminacion-card">
-                    <img src="img/icono-contaminación.png" alt="Contaminación">
+                    <img src="img/icono-contaminacion.png" alt="Contaminación">
                     <h3>Contaminación</h3>
                     <p>El depósito de basura y escombros afecta la calidad del agua, del suelo y del aire, además de favorecer la aparición de plagas que representan un riesgo para la salud.</p>
                 </div>
@@ -272,7 +278,7 @@
         <p>
             © 2026 El Malacate · Diseño y desarrollo web por <strong>Fanny Tovar</strong>.
             Proyecto académico de Diseño Gráfico y Medios Digitales.
-        </p> 
+        </p>
 
     </div>
 
@@ -283,7 +289,7 @@
 const namespace = "fanytov.github.io";
 const key = "contador_general";
 
-fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+fetch(`https://api.countapi.xyz/hit/fanytov.github.io/contador_general`)
 .then(res => res.json())
 .then(data => {
     document.getElementById("visitCount").textContent =
