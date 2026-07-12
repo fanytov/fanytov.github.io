@@ -221,11 +221,6 @@
         <!-- DERECHA -->
         <div class="footer-right px-2">
 
-            <div class="visit-counter">
-                <span class="label">Visitas</span>
-                <span id="visitCount" class="count">...</span>
-            </div>
-
             <div class="footer-columns">
 
                 <div class="footer-column">
@@ -286,19 +281,14 @@
 
 </footer>
 
- <script>
-const namespace = "fanytov.github.io";
-const key = "contador_general";
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1T50YK2215"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-fetch(`https://api.countapi.xyz/hit/fanytov.github.io/contador_general`)
-.then(res => res.json())
-.then(data => {
-    document.getElementById("visitCount").textContent =
-        data.value.toLocaleString();
-})
-.catch(() => {
-    document.getElementById("visitCount").textContent = "--";
-});
+  gtag('config', 'G-1T50YK2215');
 </script>
 
 
